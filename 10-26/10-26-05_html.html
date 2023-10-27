@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en"  >
+    <head>
+        <meta charset="UTF-8">
+        <title>기본 구조를 가진 표</title>
+    </head>
+    <body>
+        <h3>기본 구조를 가진 표</h3>
+            <hr>
+                <table border="1">
+                    <caption>
+                         1학기 성적표
+                    </caption>
+                    <thead>
+                    <th>번호</th><th>이름</th><th>국어</th><th>영어</th><th>수학</th><th>합계</th>
+                    </thead>
+                <tfoot>
+                    <th>평균</th>-<th></th><th>90</th><th>90</th><th>90</th><th>270</th>
+                </tfoot>
+                <tbody>
+                    <tr><th>1</th><th>박태민</th><th>90</th><th>90</th><th>90</th><th>270</th></tr>
+                    <tr><th>2</th><th>김영진</th><th>90</th><th>90</th><th>90</th><th>270</th></tr>
+                    <tr><th>3</th><th>오승헌</th><th>90</th><th>90</th><th>90</th><th>270</th></tr>
+                    <tr><th>4</th><th>김선호</th><th>90</th><th>90</th><th>90</th><th>270</th></tr>
+                    <tr><th>5</th><th>심나래</th><th>90</th><th>90</th><th>90</th><th>270</th></tr>
+                    <tr><th>6</th><th>김은진</th><th>90</th><th>90</th><th>90</th><th>270</th></tr>
+                </tbody>
+            </table>
+            <h2>이미지 테이블</h2>
+            <hr>
+            <table border="1">
+                <caption>좋아하는과일</caption>
+                <tbody>
+                    <tr><th><img src="../img/apple.png"></th>
+                    <th><img src="../img/banana.png"></th>
+                    <th><img src="../img/mango.png"></th></tr>
+                </tbody>
+            </table>
+            <h2>행병합 테이블</h2>
+            <hr>
+            <table border="1">    
+                    <tr>
+                        <td rowspan="3">줄 3개<br> 병합</td>
+                        <td>1row 1col</td>
+                    </tr>
+                    <tr>
+                         <td>2row 1col</td>
+                    </tr>
+                    <tr>
+                        <td>2row 1col</td>
+                    </tr>
+            </table>
+            <h2>열병합 테이블</h2>
+            <hr>
+            <table border="1">    
+                 
+                     <td colspan="3">열 3개 병합</td> 
+                     <tr><td>1row 1col</td> <td>2row 2col</td> <td>3row 2col</td></tr>
+            
+                </table>
+               
+                <table border="1">
+                    <h2>표의 고조적인 표현</h2>
+                    <caption>과목별 추천도서</caption>
+                    <tbody>
+                        <tr>
+                            <th>과목</th>
+                            <th>책제목</th>
+                            <th>저자</th>
+                            <th>출판사</th>
+                        </tr>
+                        <td rowspan="4">웹프로그래밍</td>
+                        <tr>
+                            <th>HTML5 웹프로그래밍 입문</th>
+                            <th>임순범,박희민</th>
+                            <th>생능</th>
+                        </tr>
+                        <tr>
+                            <th>소셜미디어 시대의 인테넷 이해</th>
+                            <th>최윤철,임순범</th>
+                            <th>생능</th>
+                        </tr>
+                        <tr>
+                            <th>What Is HTML5?</th>
+                            <th>B. McLaughlin</th>
+                            <th>O'Reilly</th>
+                        </tr>
+                        <tr><th>합계</th>
+                        <td colspan="3">3권</td></tr>
+
+                    </tbody>
+                </table>
+
+
+
+    </body>
+</html>
